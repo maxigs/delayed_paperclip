@@ -7,7 +7,7 @@ module DelayedPaperclip
       base.alias_method_chain :post_processing, :delay
       base.alias_method_chain :post_processing=, :delay
       base.alias_method_chain :save, :prepare_enqueueing
-      base.alias_method_chain :most_appropriate_url, :processed
+      #base.alias_method_chain :most_appropriate_url, :processed
       base.alias_method_chain :post_process_styles, :processing
     end
 
